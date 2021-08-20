@@ -1,0 +1,160 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  text-transform: capitalize;
+}
+
+body {
+  background-color: #adaca2;
+  height: 100%;
+  width: 100%;
+}
+body #app {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body #app #todo-add-container {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0px;
+  top: -100%;
+  z-index: 99;
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  transition: all 0.7s linear;
+}
+body #app #todo-add-container #todo-form {
+  width: 450px;
+  height: 40px;
+  margin: 100px auto;
+}
+body #app #todo-add-container #todo-form input {
+  height: 40px;
+  width: 90%;
+  border-radius: 30px 0px 0px 30px;
+  border: none;
+  text-indent: 10px;
+  float: left;
+}
+body #app #todo-add-container #todo-form input:focus {
+  outline: none;
+}
+body #app #todo-add-container #todo-form button {
+  height: 40px;
+  width: 10%;
+  border: none;
+  background-color: #080;
+  color: #fff;
+  cursor: pointer;
+}
+body #app #todo-add-container #cancel {
+  height: 50px;
+  width: 50px;
+  margin: auto;
+  background-color: #f00;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+}
+body #app #todo-add-container #cancel button {
+  border: none;
+  color: #fff;
+  background-color: transparent;
+  cursor: pointer;
+}
+body #app #todo {
+  margin-top: 100px;
+  width: 450px;
+  background-color: #fff;
+  position: relative;
+  padding: 25px;
+}
+body #app #todo #add-todo {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  background-color: #080;
+  top: -20px;
+  left: calc((100% - 50px) / 2);
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+}
+body #app #todo #add-todo button {
+  border: none;
+  background-color: transparent;
+  height: 100%;
+  width: 100%;
+  display: block;
+  cursor: pointer;
+  color: #fff;
+}
+body #app #todo #todo-date {
+  display: flex;
+  border-bottom: 2px solid #ccc;
+  padding: 10px;
+}
+body #app #todo #todo-date #todo-date-l {
+  width: 70%;
+  display: flex;
+}
+body #app #todo #todo-date #todo-date-l h1 {
+  font-size: 22px;
+}
+body #app #todo #todo-date #todo-date-l h1 i {
+  font-size: 18px;
+}
+body #app #todo #todo-date #todo-date-l ul {
+  list-style: none;
+  padding-left: 10px;
+}
+body #app #todo #todo-date #todo-date-r {
+  width: 30%;
+}
+body #app #todo #todo-count {
+  height: 40px;
+  line-height: 40px;
+  text-indent: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+body #app #todo #todo-items .todo-item {
+  display: flex;
+  height: 40px;
+  margin: 10px auto;
+  line-height: 40px;
+  text-indent: 10px;
+}
+body #app #todo #todo-items .todo-item:hover {
+  background-color: #ccc;
+}
+body #app #todo #todo-items .todo-item:hover button {
+  display: block;
+}
+body #app #todo #todo-items .todo-item p {
+  width: 80%;
+  color: #333;
+  font-weight: bold;
+  font-size: 16px;
+}
+body #app #todo #todo-items .todo-item button {
+  width: 10%;
+  border: none;
+  color: #f00;
+  background-color: transparent;
+  cursor: pointer;
+  display: none;
+}
+
+.isActive {
+  top: 0 !important;
+  opacity: 1 !important;
+}
+
+/*# sourceMappingURL=style.css.map */
