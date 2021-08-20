@@ -12,6 +12,7 @@ body {
 }
 body #app {
   height: 100%;
+  margin: auto;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -155,6 +156,12 @@ body #app #todo #todo-items .todo-item button {
 .isActive {
   top: 0 !important;
   opacity: 1 !important;
+}
+
+@media only screen and (max-width: 400px) {
+  #todo-form, #todo {
+    width: 300px !important;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
